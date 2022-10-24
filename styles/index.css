@@ -1,0 +1,120 @@
+/* Desenvolva a estilização da sua página aqui */
+.main_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_info_imgs {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.section_login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 44px 24px;
+    gap: 26px;
+    width: 50%;
+    height: 65%;
+    background: #FCFEFF;
+    border: 1px solid #E9ECEF;
+    border-radius: 10px;
+}
+
+.form_interactions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_inputs {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    width: 321px;
+    height: 44px;
+    background: #F8F9FA;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+}
+
+.form_btn_acess {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px; 
+    width: 321px;
+    height: 38px;
+    background: #364FC7;
+    border: 1px solid #364FC7;
+    border-radius: 4px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    color: #E9ECEF;
+}
+
+.block{
+    display: block;
+}
+
+.form_btn_register {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px; 
+    width: 321px;
+    height: 38px;
+    background: #F8F9FA;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    color: var(--gray100);
+}
+
+.text_login {
+    margin-bottom: 0px;
+    width: 49px;
+    height: 30px;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #212529;
+    margin-bottom: 3rem;
+}
+
+.margin_bottom_20 {
+    margin-bottom: 1rem;
+}

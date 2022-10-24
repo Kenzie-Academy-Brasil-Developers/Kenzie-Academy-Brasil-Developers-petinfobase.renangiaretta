@@ -5,9 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petinfo - Login</title>
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../scripts/toast.js">
+
+
 </head>
-<body>
-    <main></main>
-    <script type="module" src="index.js"></script>
+<body class="body">
+    <main class="main_container">
+
+        <section class="section_info">
+            <div class="container_info">
+                <h1>Petinfo</h1>
+                <h2>Amor e carinho por meio do conhecimento</h2>
+                <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+                <div class="container_info_imgs">
+                    <img src="../../assets/img/1.png" alt="">
+                    <img src="../../assets/img/2.png" alt="">
+                    <img src="../../assets/img/3.png" alt="">
+                    <img src="../../assets/img/4.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section_login">
+            <div class="container_form">
+                <form class="form_login_interactions">
+                    <div>
+                        <h2 class="text_login">Login</h2>
+                        <div class="container_mail">
+                            <label for="email">E-mail</label>
+                            <input id="email" class="form_inputs" type="email">
+                        </div>
+                        <div class="container_password">
+                            <label for="password">Senha</label>
+                            <input id="password" class="form_inputs" type="password">
+                        </div>
+                        <button id="acessBtn" class="form_btn_acess" type="submit">Acessar</button>
+                        <span class="block">Ainda não possui conta?</span>
+                        <span>Clicando no botão abaixo, voce pode se cadastrar rapidamente</span>
+                        <button id="registerBtn" class="form_btn_register">Cadastrar</button>
+                    </div>
+                </form>
+                
+
+            </div>
+        </section>
+        
+    </main>
+    <script type="module" src="../../scripts/index.js"></script>
+    <script type="module" src="../../scripts/login.js"></script>
 </body>
 </html>

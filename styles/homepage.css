@@ -1,0 +1,139 @@
+.body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray800);
+    padding: 20px 0px 20px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.container_header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_header_interactions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_header_interactions > img {
+    width: 41px;
+    height: 41px;
+}
+
+.container_header_interactions > button {
+    width: 152px;
+    height: 38px;
+    background-color: var(--brand100);
+    color: var(--gray800);
+}
+
+.main_container {
+    background-color: aquamarine;
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    top: 41px;
+}
+
+.container_posts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: var(--gray800);
+    border: 1px solid black;
+}
+.container_header_posts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container_header_profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container_header_profile > img {
+    width: 41px;
+    height: 41px;
+}
+
+.modalbg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+}
+
+.modal {
+    position: fixed;
+    width: 30rem;
+    height: 20rem;
+    background-color: var(--gray600);
+    display: flex;
+    flex-direction: column;
+}
+.modal_img {
+    width: 41px;
+    height: 41px;
+}
+.textTitle {
+    width: 100%;
+    height: 3rem;
+}
+.textContent {
+    width: 100%;
+    height: 8rem;
+}
+
+.container_cards {
+    background-color: aquamarine;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    top: 41px;
+}
+.modal_container_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_card_edit_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    cursor: pointer;
+}
