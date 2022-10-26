@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
 }
 
 :root {
@@ -19,8 +30,4 @@
   --alert100: #C73650;
   --alert200: #DB3C58;
   --sucess100: #087F5B;
-}
-
-body {
-  font-family: "Inter, sans-serif";
 }

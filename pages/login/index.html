@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../../styles/reset.css">
     <link rel="stylesheet" href="../../styles/globalStyles.css">
     <link rel="stylesheet" href="../../styles/index.css">
-    <link rel="stylesheet" href="../../scripts/toast.js">
+    <link rel="stylesheet" href="../../styles/toast.css">
+    <link rel="stylesheet" href="../../styles/texts.css">
 
 
 </head>
@@ -17,36 +18,33 @@
 
         <section class="section_info">
             <div class="container_info">
-                <h1>Petinfo</h1>
-                <h2>Amor e carinho por meio do conhecimento</h2>
-                <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
-                <div class="container_info_imgs">
-                    <img src="../../assets/img/1.png" alt="">
-                    <img src="../../assets/img/2.png" alt="">
-                    <img src="../../assets/img/3.png" alt="">
-                    <img src="../../assets/img/4.png" alt="">
-                </div>
+                <div class="container_img"><img src="../../assets/img/ptinfo login.png" alt=""></div>
             </div>
         </section>
 
         <section class="section_login">
             <div class="container_form">
                 <form class="form_login_interactions">
-                    <div>
-                        <h2 class="text_login">Login</h2>
+                        <h2 class="text1">Login</h2>
                         <div class="container_mail">
-                            <label for="email">E-mail</label>
-                            <input id="email" class="form_inputs" type="email">
+                            <label class="text2" for="email">E-mail</label>
+                            <input id="email" class="form_inputs " type="email">
                         </div>
                         <div class="container_password">
-                            <label for="password">Senha</label>
+                            <label class="text2" for="password">Senha</label>
                             <input id="password" class="form_inputs" type="password">
                         </div>
-                        <button id="acessBtn" class="form_btn_acess" type="submit">Acessar</button>
-                        <span class="block">Ainda não possui conta?</span>
-                        <span>Clicando no botão abaixo, voce pode se cadastrar rapidamente</span>
-                        <button id="registerBtn" class="form_btn_register">Cadastrar</button>
-                    </div>
+                        <span id="errorLogin">&#160</span>
+                        <div class="btnAcess">
+                        <button id="acessBtn" class="form_btn_acess text2">Acessar</button>
+                        </div>
+                        <div class="form_texts">
+                            <span class="block text3">Ainda não possui conta?</span>
+                            <span class="text4">Clicando no botão abaixo, voce pode se cadastrar rapidamente</span>
+                        </div>
+                        
+                        
+                        <button id="registerBtn" class="form_btn_register text2">Cadastrar</button>
                 </form>
                 
 

@@ -15,18 +15,32 @@ async function login (body) {
         })
         if (request.ok) {
             const response = await request.json()
-            toast('sucesso', 'Login feito com sucesso')
+            // toast('', '')
 
             localStorage.setItem('user', JSON.stringify(response))
+
+            document.getElementById('acessBtn').remove()
+            const changeBtn = document.querySelector('.btnAcess')
+            const btnLoad = document.createElement('button')
+            const btnLoadImg = document.createElement('img')
+
+            btnLoad.classList = 'form_btn_acess'
+            btnLoadImg.classList = 'button_img'
+
+            btnLoadImg.src = '../../assets/img/spinner.png'
+            btnLoad.appendChild(btnLoadImg)
+            changeBtn.appendChild(btnLoad)
 
             setTimeout(() => {
                 window.location.replace('homepage.html')
             }, 4000);
-    
-            console.log(response)
+            
+            // console.log(response)
         
         }else {
-            toast('Erro!', 'Algo deu errado!')
+            const createError = document.getElementById('errorLogin')
+            createError.innerText = 'E-mail ou senha incorretos.'
+            createError.style.color = 'var(--alert100)'
         }
 
     }catch (err){
@@ -47,17 +61,17 @@ async function registerUser (body) {
         })
         console.log(request)
 
-            toast('sucesso!', 'Cadastro feito com sucesso!')
+            toast('', '')
 
             setTimeout(() => {
                 window.location.replace('../login/index.html')
             }, 4000);
 
-            // toast('Erro!', 'Algo deu errado')
+            toast('', '')
 
 
     }catch (err){
-        toast('Erro!', 'Algo deu errado')
+        toast('', '')
         console.log(err)
     }
 }
@@ -91,11 +105,11 @@ async function createPost (body) {
 
             toast('sucesso!', 'Cadastro feito com sucesso!')
 
-            // setTimeout(() => {
-                // window.location.replace('../pages/login/index.html')
-            // }, 4000);
+            setTimeout(() => {
+                window.location.replace('../pages/login/index.html')
+            }, 4000);
 
-            // toast('Erro!', 'Algo deu errado')
+            toast('Erro!', 'Algo deu errado')
 
 
     }catch (err){
@@ -104,19 +118,25 @@ async function createPost (body) {
     }
 }
 
+const getProfile = async ()  => {
+    const localStorage = getLocalStorage() 
 
-
-
-
-
-
-
-
-
+        const request = await fetch(`${baseUrl}users/profile`, {
+            method: 'GET',
+            headers: {
+                'Content-type': 'application/json',
+                'Authorization': `Bearer ${localStorage.token}`
+            }
+            })
+        const response = await request.json()
+        return response
+        
+}
 
 export {
     login,
     registerUser,
     getPosts,
+    getProfile,
     baseUrl
 }

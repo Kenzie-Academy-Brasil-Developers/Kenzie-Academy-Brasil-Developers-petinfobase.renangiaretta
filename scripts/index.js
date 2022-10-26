@@ -11,7 +11,6 @@ const registerBtn = document.getElementById('registerBtn')
 
 registerBtn.addEventListener('click', event => {
     event.preventDefault()
-
     // console.log('cadastro')
     window.location.href = 'register.html'
 })

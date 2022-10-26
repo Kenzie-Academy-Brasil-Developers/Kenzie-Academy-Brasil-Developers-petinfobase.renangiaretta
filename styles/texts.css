@@ -1,0 +1,54 @@
+.text1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.text2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.text3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+.text4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.text5 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+.text6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray300);
+}
+.text7 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--brand100);
+}
+.text8 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #868E96;
+}
+.text9 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
+.text10 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray100);
+}

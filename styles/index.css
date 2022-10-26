@@ -11,15 +11,15 @@
     width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-.container_info_imgs {
-    display: flex;
     align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
+}
+.container_img {
+    width: 100%;
+    height: 100%;
+}
+.container_img > img {
+    width: 90%;
 }
 
 .section_login {
@@ -31,23 +31,22 @@
 }
 
 .container_form {
+    width: 80%;
+    height: 80%;
+    /* background-color: red; */
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 44px 24px;
-    gap: 26px;
-    width: 50%;
-    height: 65%;
-    background: #FCFEFF;
-    border: 1px solid #E9ECEF;
-    border-radius: 10px;
 }
 
-.form_interactions {
+.form_login_interactions {
+    width: 90%;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .form_inputs {
@@ -56,33 +55,43 @@
     flex-direction: row;
     align-items: center;
     padding: 0px 16px;
-    width: 321px;
-    height: 44px;
-    background: #F8F9FA;
-    border: 1px solid #E9ECEF;
+    width: 100%;
+    height: 2.75rem;
+    background: var(--gray700);
+    border: 1px solid #D9D9D9;
     border-radius: 4px;
 }
-
-.form_btn_acess {
-    box-sizing: border-box;
+.form_texts {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form_btn_acess {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px 16px; 
-    width: 321px;
-    height: 38px;
+    width: 100%;
+    height: 2.375rem;
     background: #364FC7;
     border: 1px solid #364FC7;
     border-radius: 4px;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
     color: #E9ECEF;
 }
+.button_img{
+    height: 25px;
+    animation: rotacao 0.8s linear infinite;
+}
 
-.block{
-    display: block;
+@keyframes rotacao {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) ;
+    }
 }
 
 .form_btn_register {
@@ -91,29 +100,18 @@
     justify-content: center;
     align-items: center;
     padding: 0px 16px; 
-    width: 321px;
+    width: 100%;
     height: 38px;
     background: #F8F9FA;
-    border: 1px solid #E9ECEF;
+    border: 1px solid #D9D9D9;
     border-radius: 4px;
     flex: none;
     order: 3;
     flex-grow: 0;
-    color: var(--gray100);
+    /* color: var(--gray100); */
 }
 
-.text_login {
-    margin-bottom: 0px;
-    width: 49px;
-    height: 30px;
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 150%;
-    color: #212529;
-    margin-bottom: 3rem;
-}
+
 
 .margin_bottom_20 {
     margin-bottom: 1rem;

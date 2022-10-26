@@ -8,10 +8,10 @@ const toast = (title, message) => {
     icon.alt = `Mensagem de ${title}`
     if(title == 'Sucesso!') {
         container.classList.add('successToast')
-        icon.src = '../../assets/img/1.png'
+        icon.src = '../../assets/img/success.png'
         }else {
             container.classList.add('errorToast')
-            icon.src = '../../assets/img/2.png'
+            icon.src = '../../assets/img/success.png'
         }
 
         const textContainer = document.createElement('div')
@@ -30,3 +30,4 @@ const toast = (title, message) => {
 }
 
 export default toast 
+

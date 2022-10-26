@@ -9,44 +9,40 @@
     <link rel="stylesheet" href="../../styles/globalStyles.css">
     <link rel="stylesheet" href="../../styles/register.css">
     <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/texts.css">
+    <link rel="stylesheet" href="../../styles/toast.css">
 </head>
 <body class="body">
     <main class="main_container">
 
-        <section class="section_login">
-            <div class="container_form">
-                <form class="form_interactions_two">
-                    <div class="container_register_header">
-                        <h2>Cadastro</h2>
-                        <button id="backToLogin1" >Voltar para o login</button>
+        <section class="section_register">
+            <div class="container_form_register">
+                <form class="form_register">
+                    <div class="form_header_container">
+                        <h2 class="text1">Cadastro</h2>
+                        <button id="backToLogin1" class="text2">Voltar para o login</button>
                     </div>
-                    <label for="user">Usuário</label>
-                    <input id="newUserUsername" class="form_inputs" type="text">
-                    <label for="email margin_bottom_20 ">E-mail</label>
-                    <input id="newUserEmail" class="form_inputs" type="email">
-                    <label for="image">Link da foto do perfil</label>
-                    <input id="newUserAvatar" class="form_inputs type="text">
-                    <label for="password">Senha</label>
-                    <input id="newUserPassword" class="form_inputs" type="password">
-                    <span class="block "></span>
-                    <button id="newUserRegisterBtn" class="">Cadastrar</button>
-                    <button id="backToLogin2" class="form_btn_register">Voltar para o login</button>
+                    <label class="text2" for="user">Usuário</label>
+                    <input id="newUserUsername" class="form_inputs" type="text" placeholder="Digite seu usuário aqui">
+                    <label class="text2" for="email margin_bottom_20 ">E-mail</label>
+                    <input id="newUserEmail" class="form_inputs" type="email" placeholder="Digite seu email aqui">
+                    <label class="text2" for="image">Link da foto do perfil</label>
+                    <input id="newUserAvatar" class="form_inputs" placeholder="Insira o link aqui">
+                    <label class="text2" for="password">Senha</label>
+                    <input id="newUserPassword" class="form_inputs" type="password" placeholder="Digite sua senha aqui">
+                    <div id="containerRegisterBtn">
+                    <button id="newUserRegisterBtn" class="btn_register text2">Cadastrar</button>
+                    </div>
+                    <button id="backToLogin2" class="form_btn_register text2">Voltar para o login</button>
                 </form>
             </div>
+
+
+
         </section>
         <a href="index.html"></a>
-        <section class="section_info">
-            <div class="container_info">
-                <h1>Petinfo</h1>
-                <h2>Amor e carinho por meio do conhecimento</h2>
-                <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
-                <div class="container_info_imgs">
-                    <img src="../../assets/img/1.png" alt="">
-                    <img src="../../assets/img/2.png" alt="">
-                    <img src="../../assets/img/3.png" alt="">
-                    <img src="../../assets/img/4.png" alt="">
-                </div>
-            </div>
+        <section class="section_info_register">
+            <img src="../../assets/img/register_info.png" alt="">
         </section>
       <!-- <a href="register.html"></a> -->
         
