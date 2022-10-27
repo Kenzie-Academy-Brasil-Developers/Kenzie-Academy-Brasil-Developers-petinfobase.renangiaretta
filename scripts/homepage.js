@@ -1,6 +1,6 @@
 import { getLocalStorage } from "./localStorage.js";
 
-import { getPosts, getProfile } from "./request.js";
+import { getPosts, getProfile, login } from "./request.js";
 
 import { baseUrl } from "./request.js";
 import toast from "./toast.js";
@@ -12,6 +12,7 @@ const verifyPermission = () => {
     }
 }
 verifyPermission()
+
 
 
 console.log(await getPosts())
@@ -49,19 +50,17 @@ async function renderProfileImg () {
         btnLeave.appendChild(btnLeaveImg)
         containerLeave.append(username, btnLeave)
         body.appendChild(containerLeave)
-
+        btnLeave.addEventListener('mouseout', event => {
+            containerLeave.remove()
+        })
         btnLeave.addEventListener('click', event => {
             localStorage.clear()
             window.location.href = 'index.html'
         })
-        // containerLeave.addEventListener('mouseout', event => {
-        //     event.preventDefault()
-        //     document.querySelector('.leavestuff').remove()
-        // })
     })
+    
 }
 renderProfileImg()
-
 
 
 const ulPostList = document.getElementById('ulPosts')
@@ -354,11 +353,11 @@ async function renderPostsB (array) {
         ulPostList.append(li)
                 
         if(cardName.textContent !== localStorage.getItem('teste10')){
-            cardContainerBtn.remove()
+            cardContainerBtn.remove();    
         }
 
         return ulPostList
-        
+    
     });
     
 }
@@ -441,4 +440,4 @@ async function createNewPost () {
     })
 }
 createNewPost()
-
+renderPostsB(await getPosts())

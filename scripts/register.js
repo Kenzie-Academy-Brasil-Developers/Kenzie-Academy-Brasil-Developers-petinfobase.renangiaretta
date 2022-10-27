@@ -23,12 +23,6 @@ const eventRegister = () => {
     document.getElementById("newUserRegisterBtn").disabled = true;
 
     form.addEventListener('keyup', event =>{
-      // const elements = [...form.elements]
-      // elements.forEach(element => {
-      //   if(element.tagName == 'INPUT' && (element.value).every !== ''){
-      //     document.getElementById("newUserRegisterBtn").disabled = false;
-      //   }
-      // });
       if(username.value !== '' && email.value !== '' && avatar.value !== '' && password.value !== ''){
         document.getElementById("newUserRegisterBtn").disabled = false;
         registerBtn.style.background = 'var(--brand100)'

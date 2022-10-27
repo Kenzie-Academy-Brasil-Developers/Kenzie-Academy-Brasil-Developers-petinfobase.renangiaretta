@@ -171,12 +171,14 @@
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
+    border-radius: 8px;
 }
 .profile_modal{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    border-radius: 8px;
 }
 .modal_img {
     width: 41px;
@@ -325,6 +327,7 @@ button {
     flex-direction: column;
     padding: 2rem;
     gap: 2rem;
+    border-radius: 8px;
 }
 
 .modal_confirm_button {
@@ -339,4 +342,5 @@ button {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    border-radius: 8px;
 }

@@ -33,9 +33,11 @@ async function login (body) {
 
             setTimeout(() => {
                 window.location.replace('homepage.html')
+                setTimeout(() => {
+                    window.location.href = 'homepage.html'
+                }, 1000);
+                
             }, 4000);
-            
-            // console.log(response)
         
         }else {
             const createError = document.getElementById('errorLogin')
